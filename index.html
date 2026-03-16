@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zumarada</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/jpg" href="images/logo.JPG" />
+  </head>
+  <body dir="rtl">
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg bg-body-tertiary"data-bs-theme="dark" >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.JPG" class="rounded-5" width="50" height="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">من نحن</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+                aria-expanded="false">الاقسام</a>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="#">الاخبار</a></li>
+                <li><a class="dropdown-item" href="#">اخر المنتجات</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">انشاء حساب</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">الاصناف</a>
+            </li>
+          </ul>
+        </div>
+        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <div class="text-white">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>السلة</span>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+
+
+
+
+    <!-- carousal -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"
+           aria-label="Slide 1">
+          </button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+      </button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+      </button> 
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/cover1.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>رفاهيتك تهمنا</h2>
+            <p>هنا ستجد كل ما تبحث عنه</p>
+            <button class="btn btn-dark">تسوق الان</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/cover2.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>الجودة عنواننا</h2>
+            <p>عروض ترويجية باقل سعر وافضل خامة ستكتشفها بنفسك</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/cover3.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>راحتك غايتنا</h2>
+            <p>ستجد كل ما تتمناه عند بيتك فى اقل وقت</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <i class="fa-solid fa-angles-left icon"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <i class="fa-solid fa-angles-right icon"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    
+
+    <!-- section products -->
+    <section id="products" class="text-center mt-5"></section>
+
+      <div class="d-flex justify-content-center">
+        <h2 class="text mt-5 mb-5">المنتجات</h2>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-evenly flex-wrap">
+          <div class="card  m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/15.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">تيشيرت بناتى من اللون الابيض</p>
+              <p class="card-text">200 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card  m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/10.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                بنطلون بناتي بارجل واسعة من الجينز الاسود
+              </p>
+              <p class="card-text">400 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card  m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/5.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">تيشيرت بناتى من اللون الهافان</p>
+              <p class="card-text">350 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/17.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">تيشيرت بناتى من اللون الازرق الفاتح</p>
+              <p class="card-text">250 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/18.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                تيشيرت بناتى من اللون الاسود وبه رسمة مطبوعة
+              </p>
+              <p class="card-text">300 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/20.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">تيشيرت بناتى من اللون الارجواني</p>
+              <p class="card-text">280 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/11.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">بنطلون بناتى من الجينز لاسود</p>
+              <p class="card-text">250 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/12.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">بنطلون بنات من اللون البيج بارجل واسعة</p>
+              <p class="card-text">300 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/4.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">هودي بناتى من اللون الابيض</p>
+              <p class="card-text">200 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">هودي بناتى من اللون الاصفر</p>
+              <p class="card-text">180 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/26.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">شنطة بناتى كوروس من اللون الاسود</p>
+              <p class="card-text">400 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/27.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">شنطة باك بناتى من اللون الابيض</p>
+              <p class="card-text">350 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/28.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                شنطة كوروس بناتي من اللون الاوف وابت وبها حزام من اللون البني
+              </p>
+              <p class="card-text">280 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/29.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                شنطة كوروس بناتي من اللون الاسود وبها حزام الوان
+              </p>
+              <p class="card-text">300 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/32.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">شنطة باك بناتي من اللون الرصاصى الفاتح</p>
+              <p class="card-text">500 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/41.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                كوتش رياضى بناتى من اللون الابيض والرصاصي فلات
+              </p>
+              <p class="card-text">380 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/43.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                كوتش بناتى بكعب خمسة سم من اللون الابيض والمينت جرين
+              </p>
+              <p class="card-text">400 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/44.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">هاف بوت بناتى بكعت 3 سم من اللون الاسود</p>
+              <p class="card-text">500 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/47.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                جزمة بناتى بكعب 7سم من اللون البيج والهافان
+              </p>
+              <p class="card-text">450 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/49.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                جزمة بناتي بكعب 5سم من اللون الجولد وبها شريط استرسمن الاعلي
+              </p>
+              <p class="card-text">550 جنيه مصري</p>
+            </div>
+          </div>
+          <div class="card m-2 p-0 text-center" style="width: 18rem">
+            <img src="images/50.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="my-icon mt-3 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="card-title">
+                صندل بناتي بكعب 5سم من اللون الاسود وبه من الاعلى استرس باللون
+                الفضي
+              </p>
+              <p class="card-text">350 جنيه مصري</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- secton log in-->
+    <section id="login" class="log text-center mt-5">
+      <div class="w-50 mx-auto">
+        <h2 class="text d-inline-block mt-5">اشترك معنا</h2>
+        <p class="text-log mt-3 pb-3">
+          يقدم لك موقعنا تجربة فريدة من نوعها فى عالم التسوقع الالكترونى بادر
+          بالاشتراك معنا للحصول على تجربة افضل واستخدام اسهل
+        </p>
+        <div class="input-group mb-3">
+        <input class="form-control border-start-0 inputlog" type="text" placeholder="البريد الالكتروني">
+        <button class="btn btn-primary ">اشترك الان</button>
+      </div>
+      </div>
+    </section>
+
+
+
+
+
+<!-- order -->
+<section id="order" class=" text-center mt-5 mb-5">
+  <form class="container border mt-5 rounded">
+    <h2 class="text d-inline-block mt-5">اطلب الان</h2>
+    <div class="row mt-5" >
+      <div class="col">
+        <label class="mb-2">الاسم</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col">
+        <label class="mb-2">البريد الالكتروني</label>
+        <input type="email" class="form-control">
+      </div>
+    </div>
+    <div class="row mt-4" >
+      <div class="col">
+        <label class="mb-2">رقم الهاتف</label>
+        <input type="tel" class="form-control" required>
+      </div>
+      <div class="col">
+        <label class="mb-2">العنوان</label>
+        <input type="text" class="form-control" required>
+      </div>
+    </div>
+    <div class="row mt-4" >
+      <div class="col">
+        <textarea class="form-control">اكتب طلباتك هنا</textarea>
+      </div>
+    </div>
+    <button class="btn btn-primary w-25 text-center mt-4">اطلب الان</button>
+  </form>
+  
+
+
+
+
+
+</section>
+
+
+
+
+
+<!-- Retrieval -->
+ <hr class="mb-5 mt-5">
+ <section id="Retrieval" class="text-center mt-5 mb-5">
+  <div class="container">
+    <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseExample" 
+    aria-expanded="false" aria-controls="collapseExample">سياسة الخدمة
+    <i class="fa-solid fa-angle-down"></i>
+  </button>
+    <div class="collapse mt-5" id="collapseExample">
+      <div class="card card-body" style="background-color: #efefef;">
+        <h5>سياسة ارجاع المنتجات</h5>
+      </div>
+      <div class="accordion mt-3" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              مدة الاسترجاع<i class="fa-solid fa-angle-down down mt-1 me-1"></i>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              يمكن استرجاع المنتج بعد شرائه بثلاثة ايام ويمكن استبدالة بعد اسبوعان
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              سياسة الاحتافظ بالمنتج<i class="fa-solid fa-angle-down down mt-1 me-1"></i>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              فى حالة اردت استرجاع او استبدال المنتج الرجاء الحفاظ على حالة المنتج كما كان عليها حتى تتمكن من استرجاعه او استبداله
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             عيوب المنتج<i class="fa-solid fa-angle-down mt-1 me-1"></i>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              عند استلام المنتج من المندوب الرجاء معاينته اولا قبل مغادرة المندوب واذا وجدت به اى عيب قم باسترجاعه الى المندوب مره اخرى وابلاغنا
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+ </section>
+ <hr class="mb-5 mt-5">
+
+
+
+
+
+<!-- service -->
+ <section id="service" class="mt-5 text-center">
+  <div class="container">
+  <h2 class="text d-inline-block mt-5">خدماتنا</h2>
+  <div class="row mt-4 text-center">
+    <div class="col-md-5 col-sm-12">
+      <iframe src="https://lottie.host/embed/40b7b8cb-356b-4191-9727-4a9f29d6be90/UuP6Ol5W78.lottie" class="mt-4 me-5" 
+       width="100%" height="250">
+      </iframe>
+    </div>
+    <div class="col-md-7 col-sm-12 pt-5">
+      <h3 class="mt-5 ms-5 color">تسوق عن طريق الموبايل</h3>
+      <p class="mt-3 ms-5 size">يمكنك الوصول الينا بسهولة من خلال تنويل تطبيقنا على جهازك الجوال من على المتجر او تصفح موقعنا عبر جوجل</p>
+    </div>
+  </div>
+  <div class="row mt-4 text-center" dir="ltr">
+    <div class="col-md-5 col-sm-12">
+      <iframe src="https://lottie.host/embed/4d2be074-5603-4e9a-8607-d1c937f52728/WlzSDiub5a.lottie" class="mt-2 me-5" 
+      width="100%" height="350">
+      </iframe>
+    </div>
+    <div class="col-md-7 col-sm-12 pt-5">
+      <h3 class="mt-5 ms-5 color">التوصيل والشحن حتى باب المنزل</h3>
+      <p class="mt-3 ms-5 size">لدينا اسرع خدمة توصيل كل ما عليك البحث عن احتياجاتك وبضغطة زر ستصلك الى باب منزلك فى وقت قياسي</p>
+    </div>
+  </div>
+  <div class="row mt-4 text-center">
+    <div class="col-md-5 col-sm-12">
+      <iframe src="https://lottie.host/embed/2398ea04-d7bc-4c5f-8537-026cc9900a52/O1pSBQPkoX.lottie" class="mt-1 me-5" 
+      width="100%" height="350">
+      </iframe>
+    </div>
+    <div class="col-md-7 col-sm-12 pt-5">
+      <h3 class="mt-5 ms-5 color">طريقة الدفع</h3>
+      <p class="mt-3 ms-5 size">يمكنك الدفع باكثر من طريقة سواء دفع الكترونى متوفر بجيع وسائله او الدفع كاش الى المندوب</p>
+    </div>
+  </div>
+</div>
+ </section>
+
+
+
+
+
+<footer>
+  <section id="footer">
+  <div class="container text-center">
+  <div class="row">
+    <div class="col-md-5 col-ms-12">
+      <h5 class="mt-5 mb-3 text-black">عن الفريق</h5>
+      <p class="mt-3 ms-5 ">لدينا فريق متمكن وعلى اتم استعداد لمساعدتك فى اى وقت طوال اليوم فقط لا تتردد وتواصل معنا كى نساعدك فى اسرع وقت ممكن</p>
+    </div>
+    <div class="col-md-3 col-ms-12">
+      <h5 class="mt-5 mb-4 me-4 text-black">تواصل معنا</h5>
+      <p class="mt-3 me-3 tag"><i class="fa-solid fa-house "></i>
+        الفيوم ميدان المسلة</p>
+     <p> <a href="Zumarada@gmail.com" class="z  me-3"><i class="fa-solid fa-envelope"></i>
+      Zumarada</a></p>
+      <p class="tag"><i class="fa-solid fa-phone me-3 mt-3"></i>
+        01024545593</p>
+    </div>
+    <div class="col-md-4 col-ms-12 text-center">
+      <h5 class="mt-5 mb-4 text-black">تابعنا</h5>
+      <a href="https//facebook.com"><i class="fa-brands fa-facebook  social"></i></a>
+      <a href="https//twitter.com"><i class="fa-brands fa-twitter  social"></i></a>
+      <a href="https//instagram.com"><i class="fa-brands fa-instagram  social"></i></a>
+    </div>
+  </div>
+</div>
+</footer>
+</section>
+
+
+
+
+    <!--offcanvas -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">طلباتك</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="text-center">
+          <img src="images/1.png" class="img-thumbnail offcan-img" />
+          <p>بلوفر شتوي</p>
+          <p>6$</p>
+        </div>
+        <hr />
+        <div class="text-center">
+          <img src="images/2.png" class="img-thumbnail offcan-img" />
+          <p>بنطلون جينز</p>
+          <p>10$</p>
+        </div>
+        <hr />
+        <div class="text-center">
+          <img src="images/3.png" class="img-thumbnail offcan-img" />
+          <p>هودي</p>
+          <p>20$</p>
+        </div>
+        <hr />
+        <div class="text-center">
+          <img src="images/4.png" class="img-thumbnail offcan-img" />
+          <p>هودي</p>
+          <p>20$</p>
+        </div>
+        <hr />
+        <h2 class="text-center offcan-header">الاجمالي ،46$</h2>
+        <hr />
+        <div class="text-center">
+          <button class="btn btn-dark">اكمال الشراء</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!-- modal-1 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">انشاء حساب ب زمردة</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <form >
+          <div class="row">
+            <div class="col-md-6 col-ms-12">
+          <label>الاسم الاول</label>
+          <input type="text">
+        </div>
+        <div class="col-md-6 col-ms-12">
+          <label>الاسم الثاني</label>
+          <input type="text">
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-ms-12">
+        <label>الرقم السري</label>
+        <input type="password">
+      </div>
+      <div class="col-md-6 col-ms-12">
+        <label>رقم التليفون</label>
+        <input type="tel">
+      </div>
+      </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">انشاء حساب</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

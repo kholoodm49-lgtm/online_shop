@@ -1,0 +1,258 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+  /*more*/
+*{
+  font-family: "Cairo", serif;
+ }
+
+.color{
+  color: #2c493b;
+}
+
+.size{
+  font-size: 20px;
+}
+
+
+
+
+
+
+ /* navbar*/
+.navbar{
+   background-color: #598571 !important;
+}
+.dropdown-item{
+    color: #5a9d7d;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.5);
+    transition: all 1s ease-in-out;
+}
+
+
+
+
+
+/*carousar*/
+.carousel-item img{
+  height: 100vh;
+}
+
+.icon{
+  color:#313935 ;
+  font-size: 40px;
+}
+
+.carousel-caption{
+  background-color: rgb(90, 157, 125 ,0.4);
+  padding: 60px;
+  bottom: 10%;
+  border-radius: 20px;
+}
+
+.carousel-caption:hover{
+  background-color: rgb(23, 74, 49 , 0.4);
+}
+
+.carousel-caption h2{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.carousel-caption p{
+  font-size: 25px;
+}
+
+.btn-dark:hover{
+  background-color: #330710 ;
+  border-radius: 110px;
+  transition: all 1s ease-in-out;
+}
+
+.carousel-indicators button{
+  width: 20px !important;
+ height: 20px !important;
+  border-radius: 50% !important;
+  background-color: #313935 !important;
+}
+
+
+
+
+
+/* offcanvas*/
+.btn-close{
+  position: absolute !important;
+  left: 20px !important;
+}
+
+.offcan-img{
+  width: 200px !important;
+  height: 250px !important;
+}
+
+.offcan-img:hover{
+  transform: scale(1.1);
+  transition: all ease-in  1s;
+}
+
+.offcan-header{
+  color: #841c31;
+}
+
+
+
+
+
+/* section products*/
+.text{
+  border-bottom: 5px solid #313935;
+  padding-bottom: 2px;
+}
+
+.btn-primary{
+  background-color: #41594d;
+  border: none;
+}
+
+.btn-primary:hover{
+  border-radius: 110px;
+  background-color: #330710;
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
+
+.my-icon{
+  color: #41594d;
+  font-size: 20px;
+}
+
+.my-icon:hover{
+  color: #841c31;
+  cursor: pointer;
+}
+
+.card{
+  overflow: hidden;
+}
+
+.card img{
+  height: 300px;
+  width: 100%;
+}
+
+.card img:hover{
+  transform: scale(1.1);
+  transition: all 1s ease;
+
+}
+
+
+
+
+
+/*section log in*/
+.log{
+  height: 60vh;
+  background-image: url(../images/cover1.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.text-log{
+  color: black;
+  font-size: 18px;
+}
+
+.inputlog{
+  border-radius: 0;
+}
+.log button{
+  width: 150px ;
+  border-radius: 20px 0 0 20px !important;
+}
+
+
+
+
+
+/*Retrieval*/
+.accordion-button::after{
+  display: none !important;
+}
+
+.accordion-button{
+  background-color: rgb(89, 133, 113);
+  color: black;
+  font-size: 20px;
+}
+
+.accordion-button:focus{
+  color: #330710;
+}
+
+
+
+
+
+/*footer*/
+footer{
+  background-color: #41594d;
+  color: white;
+}
+
+footer p{
+  font-size: 16px;
+}
+
+footer .tag:hover{
+  cursor: pointer;
+}
+
+footer .z{
+  text-decoration: none;
+  font-size: 14;
+  color: white;
+}
+
+footer .social{
+ color: white ;
+ font-size: 18px;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+footer .social:hover{
+  transform: scale(1.2);
+  color: #330710;
+  transition: all 1s ease;
+}
+
+
+
+
+
+/* scrool bar */
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #4ca97c; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2b8258; 
+}
